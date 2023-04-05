@@ -22,7 +22,7 @@ body {
 	background-color: var(--background);
 }
 
-main {
+main, footer, header {
 	max-width: 37.5em;
 	margin: 0 auto;
 }
