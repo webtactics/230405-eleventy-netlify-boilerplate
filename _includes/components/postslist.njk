@@ -10,6 +10,10 @@
 					{% endif %}
 				</a>
 			</h3>
+<div class="blogsumimage">
+<a href="{{ post.url }}"><img src="{{ post.data.image }}/tr:w-400,h-300" alt="{{ post.data.imageAlt }}" title="{{ post.data.imageAlt }}" class="snippet__image"></a></div>
+
+
 			{% if post.data.summary %}
 				<p>
 					{{ post.data.summary }}
