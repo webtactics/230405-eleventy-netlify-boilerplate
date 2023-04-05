@@ -1,9 +1,9 @@
 {
     "layout": "layouts/post.njk",
-    "permalink": "posts/{{ title | slug }}/index.html",
+    "permalink": "services/{{ title | slug }}/index.html",
     "author": "Anonymous",
     "tags": [
-      "post"
+      "services"
     ]
   }
   
