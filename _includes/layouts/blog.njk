@@ -11,4 +11,6 @@ permalink: /blog/index.html
 {% include "components/postslist.njk" %}
 
 <h4>Services</h4>
+{% set postslist = collections.services %}
+{% include "components/postslist.njk" %}
 
