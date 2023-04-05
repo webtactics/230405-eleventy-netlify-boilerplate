@@ -10,8 +10,14 @@ section: post
       <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
     </small>
   </p>
-	{% if post.data.image %}
-  <figure class="main-article__figure"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}">
+	{% if page.image %}
+  <figure class="main-article__figurepage"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}">
+<figcaption>{{ imageAlt }}</figcaption>
+</figure>
+	{% endif %}
+
+  	{% if image %}
+  <figure class="main-article__figureimage"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}">
 <figcaption>{{ imageAlt }}</figcaption>
 </figure>
 	{% endif %}
