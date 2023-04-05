@@ -15,6 +15,10 @@ section: post
 <figcaption>{{ imageAlt }}</figcaption>
 </figure>
 	{% endif %}
+
+  <figure class="main-article__figure"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}">
+<figcaption>{{ imageAlt }}</figcaption>
+</figure>
   {{ layoutContent | safe }}
 
   {% if tags %}
