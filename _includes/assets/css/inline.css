@@ -121,7 +121,7 @@ header nav li a[href]:hover {
 }
 header nav li a[aria-current="page"] {
 	background-color: white;
-	color:var(--secondary);
+	color:var(--red);
 }
 
 /* Posts List */
