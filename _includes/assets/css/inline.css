@@ -2,6 +2,7 @@
 	--primary: blue;
 	--secondary: white;
 	--background: #FFF0EB;
+	--red: #D90000
 }
 
 *, *:before, *:after {
@@ -113,7 +114,11 @@ header nav li a[href]:not(:hover) {
 	text-decoration: none;
 	border:none;
 }
-
+header nav li a[href]:hover {
+	text-decoration: none;
+	border:none;
+	color:var(--red);
+}
 header nav li a[aria-current="page"] {
 	background-color: white;
 	color:var(--secondary);
