@@ -90,38 +90,9 @@ header > em {
 }
 
 /* Header Nav */
-header nav ul {
-	padding: 0;
-	list-style: none;
-}
 
-header nav ul :first-child {
-	margin-left: 0;
-}
 
-header nav li {
-	display: inline-block;
-	margin: 0 .25em;
-}
 
-header nav li a {
-	padding: .25em .5em;
-	border-radius: .25em;
-}
-
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
-	border:none;
-}
-header nav li a[href]:hover {
-	text-decoration: none;
-	border:none;
-	color:var(--red);
-}
-header nav li a[aria-current="page"] {
-	background-color: white;
-	color:var(--red);
-}
 
 /* Posts List */
 article {
@@ -203,6 +174,23 @@ button {
 	}
 }
 /* Nav list */
+
+:where([role="list"]) {
+	list-style: none;
+	padding-inline-start: 0;
+  }
+
+  .nav-list {
+	background-color: #1F1E25;
+	color: #8F94A6;
+	user-select: none;
+  }
+
+  .nav-list a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+  }
 .nav-list summary {
 	cursor: pointer;
 	display: block;
@@ -237,7 +225,9 @@ button {
 .nav-list .is-active summary {
   position: relative;
 }
-
+.nav-list details > [role="list"] {
+	padding-inline-start: .75rem;
+  }
 .nav-list > li > a[aria-current="page"]:before,
 .nav-list .is-active summary:before {
   content: "";
