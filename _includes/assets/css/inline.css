@@ -36,6 +36,7 @@ code {
 a[href],
 a[href]:visited {
 	color: var(--primary);
+	text-decoration: none;
 }
 
 a[href]:not(:hover) {
