@@ -110,10 +110,12 @@ header nav li a {
 
 header nav li a[href]:not(:hover) {
 	text-decoration: none;
+	border:none;
 }
 
 header nav li a[aria-current="page"] {
 	background-color: white;
+	color:var(--secondary);
 }
 
 /* Posts List */
