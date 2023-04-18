@@ -9,7 +9,9 @@
 			<em>
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
 			</em>
-			{% include "components/nav.njk" %}
+
+<div class="topnav">{% include "components/top-nav.njk" %}</div>
+<div class="sidenav">{% include "components/nav.njk" %}</div>
 		</header>
 
 		<main>
