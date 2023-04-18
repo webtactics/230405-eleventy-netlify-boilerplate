@@ -2,7 +2,7 @@
 {% set navPages = collections.all | eleventyNavigation %}
 <ul>
 {%- for entry in navPages %}
-  <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+  <li{% if entry.url == page.url %} class="active-class"{% endif %}>
     <a href="{{ entry.url }}">{{ entry.title }}</a>
   </li>
 {%- endfor %}
@@ -25,4 +25,8 @@
 <ul>
 {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>
+</nav>
+<nav call="all">
+{% set navPages = collections.all | eleventyNavigation %}
+{{ navPages | dump | safe }}
 </nav>
