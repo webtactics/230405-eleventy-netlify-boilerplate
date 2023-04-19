@@ -3,10 +3,10 @@ title: Wat Pho Thai Foot Reflexology
 author: Paul Goldsmith
 date: 2023-04-19
 tags:
-  - 30 min
-  - 45 min
-  - 60 min
-  - 90 min
+  - 30-min
+  - 45-min
+  - 60-min
+  - 90-min
 image: https://ik.imagekit.io/webtactics/gtmassage/images/massages/Wat-Pho-Traditional-Thai-Foot-Reflexology.jpg
 imageAlt: Wat Pho Thai Foot Reflexology
 description: A centuries-old healing therapy combining Thai massage techniques with traditional reflexology.
