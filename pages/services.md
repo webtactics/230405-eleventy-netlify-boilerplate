@@ -14,4 +14,4 @@ and saves them in the connected Netlify account where notifications can
 optionally be configured. Each submission is passed through a spam filter and
 if flagged, will display a CAPTCHA challenge to the user.
 
-[Log in to the Netlify CMS dashboard](gtmassage.com.au/admin/)
+[Log in to the Netlify CMS dashboard](https://www.gtmassage.com.au/admin/)
