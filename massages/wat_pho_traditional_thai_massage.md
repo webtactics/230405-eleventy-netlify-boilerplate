@@ -1,5 +1,5 @@
 ---
-title: Wat Pho Thai Foot Reflexology
+title: Wat Pho Traditional Thai Massage
 author: Paul Goldsmith
 date: 2023-04-19
 tags:
@@ -7,9 +7,9 @@ tags:
   - 45-min
   - 60-min
   - 90-min
-image: https://ik.imagekit.io/webtactics/gtmassage/images/massages/Wat-Pho-Traditional-Thai-Foot-Reflexology.jpg
-imageAlt: Wat Pho Thai Foot Reflexology
-description: A centuries-old healing therapy combining Thai massage techniques with traditional reflexology.
+image: https://ik.imagekit.io/webtactics/gtmassage/images/massages/Thai-Massage-leg-strech.jpg
+imageAlt: Wat Pho Traditional Thai Massage
+description:  Wat Pho Traditional Thai Massage is an ancient healing therapy based on Yoga and Ayurveda.
 ---
 
-A centuries-old healing therapy combining Thai massage techniques with traditional reflexology. Let go of tensions as your therapist works on acupressure points from the knees down along with a traditional Thai foot massage stick to stimulate organ reflex points, activating healing and balancing throughout the body. Improves blood and lymphatic circulation, natural detoxification and promotes deep relaxation.
+Our speciality, and base of training. Wat Pho Traditional Thai Massage is an ancient healing therapy based on Yoga and Ayurveda. We provide loose clothing so that the massage can be enjoyed and allowing ease of movement and flexibility. Wat Pho Traditional Thai Massage has the ability to relieve physical and emotional tension, improve flexibility and release blocked energy leaving you with a sense of deep calmness and tranquillity.
