@@ -5,6 +5,6 @@ metaDescription: A simple description of some of the massages we offer our clien
 date: 2023-04-19
 permalink: /massages/
 eleventyNavigation:
-  key: massages
-  order: 5
+  key: Massages
+  order: 1
 ---
