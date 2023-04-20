@@ -89,6 +89,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("admin/");
   // We additionally output a copy of our CSS for use in Netlify CMS previews
   eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
+  eleventyConfig.addPassthroughCopy("_includes/assets/css/foundation.6.7.5.min.css");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
