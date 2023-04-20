@@ -5,3 +5,16 @@ class: home
 ---
 
 {{ layoutContent | safe }}
+
+
+<section class="white">
+<div class="grid-container">
+ <div class="grid-x grid-padding-x">
+<div class="small-12 cell">
+<h3 align="center">Our services and massages</h3>
+{% set postslist = collections.massages %}
+{% include "components/postslist.njk" %}
+</div>
+</div>
+</div>
+</section> 
