@@ -9,7 +9,7 @@
 </ul>
 </nav>
 
-<nav>
+<nav class="childlist">
 {% set navPages = collections.all | eleventyNavigation %}
 {% macro renderNavListItem(entry) -%}
 <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
@@ -25,8 +25,4 @@
 <ul>
 {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>
-</nav>
-<nav call="all">
-{% set navPages = collections.all | eleventyNavigation %}
-{{ navPages | dump | safe }}
 </nav>
