@@ -4,3 +4,82 @@
     Check out the <a href="{{ pkg.repository.url }}">GitHub repo</a>.
   </small>
 </footer>
+
+  { {% set js %}
+   {% include "assets/js/jquery-3.2.1.min.js" %}
+    {% include "assets/js/foundation.6.7.5.min.js" %}
+     {% include "assets/js/slick.min.js" %}
+      {% include "assets/js/app.js" %}
+    {% include "assets/js/inline.js" %}
+    <script> 	  
+$(document).foundation();
+$('.off-canvas a').on('click', function() {
+  $('.off-canvas').foundation('close');
+});
+</script> 
+<script>
+$(function() {
+    var header = $(".navbackground");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 56) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+</script>
+{jsmin}<script>
+$('.home-slide').slick({
+autoplay: true,
+infinite: true,
+pauseOnHover: true,
+swipeToSlide: true,
+autoplaySpeed: 6000,
+speed: 3000,
+arrows: false,
+dots: true,
+fade: true,
+cssEase: 'ease'
+  });
+</script>
+{/jsmin}{/block}
+{block name='massagescroll'}{jsmin}
+{if $page_alias == "contact-us"} 
+<script>
+ $('.client-class').slick({
+arrows: true,
+  dots: false,
+   autoplay: true,
+ prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true" title="Previous massage"></i></div>',
+    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true" title="Next massage"></i></div>',
+  speed: 3000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+            infinite: true,
+           speed: 1 
+      }
+    }
+  ]
+});
+</script>
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script> }
