@@ -1,6 +1,39 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-<script src="_includes/assets/js/slick.min.js"></script>
-<script src="_includes/assets/js/inline.js"></script>
 <script src="https://www.gtmassage.com.au/js/slick.min.js"></script>
 <script src="https://www.gtmassage.com.au/js/app.js"></script>
+<script> 	  
+$(document).foundation();
+$('.off-canvas a').on('click', function() {
+  $('.off-canvas').foundation('close');
+});
+</script> 
+<script>
+$(function() {
+    var header = $(".navbackground");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 56) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+</script>
+<script>
+$('.home-slide').slick({
+autoplay: true,
+infinite: true,
+pauseOnHover: true,
+swipeToSlide: true,
+autoplaySpeed: 6000,
+speed: 3000,
+arrows: false,
+dots: true,
+fade: true,
+cssEase: 'ease'
+  });
+</script>
