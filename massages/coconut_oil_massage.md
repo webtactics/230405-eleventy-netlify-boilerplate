@@ -10,6 +10,7 @@ tags:
 image: https://ik.imagekit.io/webtactics/gtmassage/images/massages/Thai-Hot-Coconut-Oil-Massage.jpg
 imageAlt: Coconut Oil Massage
 description: Essential oils are heated and used during this massage which brings deep comfort and the feeling of complete regeneration.
+metaDescription: Essential oils are heated and used during this massage which brings deep comfort and the feeling of complete regeneration.
 ---
 
 
