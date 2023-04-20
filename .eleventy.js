@@ -82,21 +82,6 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(metagen);
 };
 
-  // Add massages collection
-eleventyConfig.addCollection("massagesCollection", (collection) => {
-  const allItems = collection.getAll()[0].data.customData;
-
-  // Filter or use another method to select the items you want
-  // for the collection
-  return allItems.filter((item) => {
-    // ...
-  });
-});
-
-
-
-
-
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
