@@ -2,6 +2,27 @@
   <meta charset="utf-8">
   <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% metagen
+  title="Eleventy Plugin Meta Generator",
+  desc="An eleventy shortcode for generating meta tags.",
+  url="https://tannerdolby.com",
+  img="https://tannerdolby.com/images/arch-spiral-large.jpg",
+  img_alt="Archimedean Spiral",
+  twitter_card_type="summary_large_image",
+  twitter_handle="tannerdolby",
+  name="Tanner Dolby",
+  generator="eleventy",
+  comments=true,
+  css=["style.css", "design.css"],
+  js=["foo.js", ["bar.js", "async"]],
+  inline_css="h1 { color: #f06; }",
+  inline_js="console.log('hello, world.');"
+%}
+
+
+
+
+
   <title>{{ title or metadata.title }}</title>
   <meta name="description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}">
   {% set css %}
