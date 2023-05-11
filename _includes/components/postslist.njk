@@ -1,6 +1,7 @@
 <section>
 	{% for post in postslist | reverse %}
-		<article{% if post.url == url %} data-current="current item"{% endif %} class="grid-2-columns" >
+		<article{% if post.url == url %} data-current="current item"{% endif %}>
+			<div class="grid-2-columns" >
 			<div class="postwrapper">
 			<h3>
 				<a href="{{ post.url | url }}">
@@ -36,7 +37,7 @@
 		  			{%- endif -%}
 					{% endfor %}
 				</p>
-				</div>
+				</div></div>
 			{% endif %}
 		</article>
 	{% endfor %}
