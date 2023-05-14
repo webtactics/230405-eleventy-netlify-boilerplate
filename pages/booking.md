@@ -1,7 +1,7 @@
 ---
 layout: layouts/booking.njk
 title: Make a booking
-metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.description will be used instead.
+description: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.description will be used instead.
 section: contact
 date: 2023-01-01
 permalink: /booking/

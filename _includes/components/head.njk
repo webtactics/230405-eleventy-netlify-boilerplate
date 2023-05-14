@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="{{ eleventy.generator }}">
-  <meta property="og:description" content="{{ metadata.metaDescription  }}" />
+  <meta property="og:description" content="{{ metadata.description  }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href="https://www.gtmassage.com.au/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.gtmassage.com.au/favicon-32x32.png">
@@ -15,9 +15,9 @@
 <title>{{ title or metadata.title }}</title>
 
 <meta property="og:title" content="{{ title or metadata.title }}" />
-<meta property="og:description" content="{{ metadata.metaDescription  }}" />
+<meta property="og:description" content="{{ metadata.description  }}" />
 
-<meta property="og:description1" content="{{ metadata.metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
+<meta property="og:description1" content="{{ metadata.description or eleventyComputed.description }}" />
 <meta property="og:image" content="{{ image or eleventyComputed.image or metadata.image }}" />
 <meta property="og:url" content="https://www.gtmassage.com.au{{ page.url or post.url or permalink }}" />
 
