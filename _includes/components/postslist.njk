@@ -42,3 +42,33 @@
 		</div>
 	{% endfor %}
 </section>
+
+
+<!-- Start News Display Template -->
+{if $items|@count > 0}
+    <div class="grid-3-columns">
+<!-- items -->
+{foreach from=$items item=item}
+	<!-- item -->
+<div class="NewsSummaryHome">
+<div class="CGBlogSummaryField">
+<a href="{$item->url}" title="{$item->title}">
+<img class="lazy" src="https://ik.imagekit.io/webtactics/gtmassage/{$item->image}?tr=w-450,h-270" alt="{$item->title}" title="{$item->title}"/>
+<span class="image-overlay">
+<span class="overlay-icon"><img src="{root_url}/uploads/images/assets/summicon.png" /></span></span></a>
+</div>
+<div class="NewsSummaryLinkHome">
+<h2><a href="{$item->url}" title="{$item->title|cms_escape:htmlall}">{$item->title|cms_escape}</a></h2>
+</div>
+<div class="NewsSummaryPrice">   
+{if !empty($item->Price30)}30 min: {$item->Price30} | {/if}{if !empty($item->Price45)}45 min: {$item->Price45}{/if}<br>
+{if !empty($item->Price60)}60 min: {$item->Price60} | {/if}{if !empty($item->Price90)}90 min: {$item->Price90}{/if}</div>
+<div class="NewsSummarySummaryHome">
+{$item->Content|strip_tags|truncate:170:"...":true}
+</div>
+<div class="right newssumbutton">
+<a class="button right" title="{$item->title|cms_escape:htmlall}" href="{$item->url}">Read more &gt;</a>
+</div>
+</div>
+
+<!-- End News Display Template -->
