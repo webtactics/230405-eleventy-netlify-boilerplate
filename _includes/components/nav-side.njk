@@ -1,4 +1,4 @@
-<nav class="offcanvas">
+
 {% set navPages = collections.all | eleventyNavigation %}
 {% macro renderNavListItem(entry) -%}
 <li{% if entry.url == page.url %} class="active-class"{% endif %}>
@@ -14,4 +14,4 @@
 <ul class="off-canvas-list">
 {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>
-</nav>
+
