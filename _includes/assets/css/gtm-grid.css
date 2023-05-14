@@ -579,9 +579,11 @@ ul.off-canvas-list li a:hover, ul.off-canvas-list li a:focus {
   font-weight: bold;
 }
 
-ul.off-canvas-list > li.current > a {
+ul.off-canvas-list > li.current > a, ul.off-canvas-list > li.ctive-class > a {
   color: var(--white);
   background-color: var(--primary); font-weight: bold;}
+
+
 
 .hero {height: 100svh;height: 100vh;}
 .homebooklogo {
