@@ -1,7 +1,7 @@
 ---
 layout: layouts/contact.njk
-title: Get in touch
-metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.description will be used instead.
+title: Get in touch with Gloucester Thai Massage
+metaDescription: To book a massage please call Joy on 0411 447 704, use our booking page or email joy@gtmassage.com.au. Gloucester Thai Massage is located at Shop 2/78 Church St, Gloucester, 2422
 section: contact
 date: 2018-01-01
 permalink: /contact/
@@ -9,7 +9,11 @@ eleventyNavigation:
   key: Contact
   order: 4
 ---
-The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
-and saves them in the connected Netlify account where notifications can
-optionally be configured. Each submission is passed through a spam filter and
-if flagged, will display a CAPTCHA challenge to the user.
+
+To book a massage please call Joy on [0411 447 704](tel:+61411447704), use our [booking page](/booking/) or email [joy@gtmassage.com.au](mailto:joy@gtmassage.com.au)
+
+**Opening hours**
+Monday–Friday: 9am - 5pm
+Saturday: 9am - 1pm (by prior booking only)
+
+Please call for bookings outside our "normal" hours, as we will do our best to accommodate wherever possible.
