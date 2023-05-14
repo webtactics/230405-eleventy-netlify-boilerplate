@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 title: Gloucester Thai Massage
 date: 2023-04-22T00:00:00.000Z
-description: Gloucester Thai Massage trained with the prestigious Wat Pho massage school, in Bangkok, Thailand and takes great pride in her massages and service.
+description: Gloucester Thai Massage trained with the prestigious Wat Pho massage school, in Bangkok, Thailand and we take great pride in our massages and service.
 permalink: /
 eleventyNavigation:
   key: Home
