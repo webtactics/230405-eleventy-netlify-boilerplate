@@ -20,3 +20,10 @@ For more info on installation and usage, view the [project repo]({{ pkg.reposito
 Or click the button below to deploy your own copy of this project to Netlify.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+
+
+
+<strong>Joy from Gloucester Thai Massage trained with the prestigious Wat Pho massage school, in Bangkok, Thailand and takes great pride in her massages and service.</strong>
+To book a massage please call Joy on {Snippet name='telephone'}, use our [booking page] (/booking/) or email <a title="joy@gtmassage.com.au" href="mailto:joy@gtmassage.com.au?subject=Booking a massage">joy@gtmassage.com.au</a>
+
+##Our Services and massages:
