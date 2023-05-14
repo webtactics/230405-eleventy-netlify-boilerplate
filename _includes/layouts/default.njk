@@ -10,7 +10,7 @@
     <button class="close-nav">Close</button>
     <h3>Menu</h3>
     <div class="mobilemenu">
-    {Navigator loadprops='0' template='minimal_menu'}
+  {% include "components/top-nav.njk" %}
   </div>
   </nav>
   
@@ -29,7 +29,7 @@
         <img src="https://ik.imagekit.io/webtactics/gtm/assets/gloucester-thai-massage-logo-150x150_Qm9VcMjWA.jpg?updatedAt=1683952271536" alt="Gloucester Thai Massage" title="Gloucester Thai Massage">
         </a></div>
       <div class="navwrapper">
-      {Navigator loadprops='0' template='gtm-grid-nav'}
+  {% include "components/top-nav.njk" %}
         </div>
       <div class="socialwrapper">
       <ul class="menusocial">
@@ -43,7 +43,7 @@
        <h2>{title}</h2>
 {{ layoutContent | safe }}
 
-<div class="responsive-embed widescreen">{$map_content}</div>
+
 </section>
 
 
