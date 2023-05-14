@@ -634,7 +634,7 @@ background-color: var(--white);
 .content {padding: 1rem 0.5rem;}
 
 .massage-detail .content, .internal .content {
-  margin: -90vh auto 0 auto;
+  margin: -70vh auto 0 auto;
     background-color: var(--white);
     }
 
