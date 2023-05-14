@@ -1,41 +1,19 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
-	{% include "components/head.njk" %}
+{% include "components/head.njk" %}
 
 	
 <body class=" {{ class }} internal" >
 
-<nav class="offcanvas">
-    <button class="close-nav">Close</button>
-    <h3>Menu</h3>
-    <div class="mobilemenu">
-  {% include "components/top-nav.njk" %}
-  </div>
-  </nav>
+  {% include "components/off-canvas.njk" %}
   
   {% include "components/hero-home.njk" %}
 
-  <div class="container">
+<div class="container">
    
-<header id="header" class="topbar headerwrapper">
-     
-      <div class="hamburger"><div class="toggle-nav" aria-label="Toggle Navigation"><span class="hamburger-icon"></span>
-        <span class="title-bar-title">Menu</span>
-      </div></div>
-      <div class="logo"><a href="/" title="Return to the homepage | Gloucester Thai Massage" id="logo">
-        <img src="https://ik.imagekit.io/webtactics/gtm/assets/gloucester-thai-massage-logo-150x150_Qm9VcMjWA.jpg?updatedAt=1683952271536" alt="Gloucester Thai Massage" title="Gloucester Thai Massage">
-        </a></div>
-      <div class="navwrapper">
-  {% include "components/top-nav.njk" %}
-        </div>
-      <div class="socialwrapper">
-      <ul class="menusocial">
-        <li><a title="Follow Gloucester Thai Massage on Facebook" href="https://www.facebook.com/GloucesterThaiMassage/" target="_blank"> <img src="https://ik.imagekit.io/webtactics/gtm/assets/facebook-50x50_xSfiXGDeZ.png?tr=w-34,h-34" alt="Follow Gloucester Thai Massage on Facebook" title="Follow Gloucester Thai Massage on Facebook"></a></li>
-      </ul>
-      </div>
- 
-</header>
+{% include "components/header.njk" %}
+
 <section role="main" class="content">   
 {{ layoutContent | safe }}
 
@@ -45,17 +23,9 @@
 </section>
 
 
-<section class="footer"><div class="footerwrap"><p>Joy from Gloucester Thai Massage trained with the prestigious Wat Pho massage school, in Bangkok, Thailand.</p>
-  <p>To <a href="https://www.gtmassage.com.au/booking" title="Make a booking" alt="Make a booking" class="return-link">book a massage</a> please call Joy on <a title="Call Gloucester Thai Massage" href="tel:+61411447704">0411 447 704</a>, or email <a title="joy@gtmassage.com.au" href="mailto:joy@gtmassage.com.au?subject=Booking a massage">joy@gtmassage.com.au</a></p>
-  <p>Gloucester Thai Massage is located at <a title="Gloucester Thai Massage" href="https://goo.gl/maps/Ucb2RNnhJfL2" target="_blank" rel="noopener">Shop 2/78 Church St, Gloucester, 2422</a></p><a class="scrollToTop" style="display: inline;" href="#">Scroll To Top</a></div></section>
-
-
-  </div>
-
-
+  {% include "components/footer.njk" %}
+</div>
 <script src="https://www.gtmassage.com.au/js/script.js"></script>
-
-
 
 </body>
 </html>
