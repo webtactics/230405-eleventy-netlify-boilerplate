@@ -88,8 +88,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin/");
   // We additionally output a copy of our CSS for use in Netlify CMS previews
-  eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
-  eleventyConfig.addPassthroughCopy("_includes/assets/css/foundation.6.7.5.min.css");
+  eleventyConfig.addPassthroughCopy("_includes/assets/css/gtm-grid.css");
+    // We additionally output a copy of our js for use in Netlify CMS previews
+    eleventyConfig.addPassthroughCopy("_includes/assets/js/script.js");
+  module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("script.js");
+  };
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
