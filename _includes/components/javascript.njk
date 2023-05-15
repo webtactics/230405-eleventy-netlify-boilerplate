@@ -1,1 +1,5 @@
-<script src="assets/js/script.js"></script>
+
+  {% set js %}
+    {% include "assets/js/script.js" %}
+  {% endset %}
+  <style>{{ css | jsmin | safe }}</style>
