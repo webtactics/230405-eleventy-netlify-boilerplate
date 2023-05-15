@@ -1,1 +1,7 @@
-<script src="https://startling-rolypoly-853b54.netlify.app/_includes/assets/js/script.js"></script>
+<script src="_includes/assets/js/script.js"></script>
+
+  {% set js %}
+    {% include "assets/js/script.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+
