@@ -22,14 +22,14 @@ section: post
 
 
   {% if tags %}
-    <p>
+    <div class="NewsSummaryPrice detail"><h4>Tags</h4>
     {% for tag in tags %}
       {%- if tag != "post" -%}
         {% set tagUrl %}/massages/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+       <div class="tag"><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></div>
       {%- endif -%}
     {% endfor %}
-    </p>
+    </div>
   {% endif %}
  
 <a class="button blogdetail" href="/booking" class="return-link">Make a booking</a>    
