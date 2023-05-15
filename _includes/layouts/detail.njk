@@ -8,7 +8,7 @@
 
   {% include "components/off-canvas.njk" %}
   
-  {% include "components/hero-home.njk" %}
+  {% include "components/hero.njk" %}
 
 <div class="container">
    
@@ -17,15 +17,12 @@
 <section role="main" class="content">   
 {{ layoutContent | safe }}
 
-{% set postslist = collections.massages %}
-{% include "components/postslist.njk" %}
-
 </section>
 
 
   {% include "components/footer.njk" %}
 </div>
-{% include "components/javascript.njk" %}
+<script src="https://www.gtmassage.com.au/js/script.js"></script>
 
 </body>
 </html>
