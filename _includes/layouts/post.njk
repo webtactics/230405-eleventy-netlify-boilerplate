@@ -1,24 +1,25 @@
 ---
-layout: layouts/default.njk
+layout: layouts/detail.njk
 section: post
 ---
 
+
+
+
 <article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
-    </small>
-  </p>
-
-{% if image %}
-  <figure class="main-article__figureimage"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}">
-<figcaption>{{ imageAlt }}</figcaption>
-</figure>
-{% endif %}
+<div class="item blogdetail">
+<h1 class="heading-text">{{ title }}</h1>
 
 
-  {{ layoutContent | safe }}
+<div class="blogdetailimage" align="center"><img src="{{ image }}/tr:w-1000,h-600" alt="{{ imageAlt }}" title="{{ imageAlt }}"></div>
+<div class="detailcontent">     
+{{ layoutContent | safe }}</div>
+ <div class="NewsSummaryPrice detail"> 
+ <h4>Pricing</h4>
+{% if post.data.time30 %}30 min: {{ post.data.time30 }} | {% endif %}{% if post.data.time45 %}45 min: {{ post.data.time45 }}{% endif %}<br>
+{% if post.data.time60 %}60 min: {{ post.data.time60 }} | {% endif %}{% if post.data.time90 %}90 min: {{ post.data.time90 }}{% endif %}
+</div>   
+
 
   {% if tags %}
     <p>
@@ -30,9 +31,9 @@ section: post
     {% endfor %}
     </p>
   {% endif %}
-
+ 
+<a class="button blogdetail" href="/booking" class="return-link">Make a booking</a>    
+  
+<a class="button blogdetail right" href="/massages" class="return-link">Return to the What we do page</a>    
+</div>
 </article>
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
