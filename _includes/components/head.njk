@@ -34,6 +34,11 @@
   {% endset %}
   <script>{{ js | jsmin | safe }}</script> #}
 
+  {% set js %}
+    {% include "assets/js/script.js.s" %}
+  {% endset %}
+  <style>{{ css | jsmin | safe }}</style>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127053312-1"></script>
