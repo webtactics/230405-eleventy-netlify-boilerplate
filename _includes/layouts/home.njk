@@ -1,34 +1,5 @@
-<!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+{% extends "default.njk" %}
 
-{% include "components/head.njk" %}
-
-	
-<body class=" {{ class }} internal" >
-
-  {% include "components/off-canvas.njk" %}
-  
+  {% block hero %}
   {% include "components/hero-home.njk" %}
-
-<div class="container">
-   
-{% include "components/header.njk" %}
-
-<section role="main" class="content">   
-{{ layoutContent | safe }}
-
-{% set postslist = collections.massages %}
-{% include "components/postslist.njk" %}
-
-</section>
-
-
-  {% include "components/footer.njk" %}
-</div>
-
-
-
-{% include "components/javascript.njk" %}
-
-</body>
-</html>
+  {% endblock %}
